@@ -1,0 +1,83 @@
+body {
+    background-image: url('love.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.proposal {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons-container {
+    position: relative;
+    margin-top: 20px;
+    height: 60px;
+    width: 100%;
+    /* overflow: hidden; Ensures button never escapes container */
+}
+
+button {
+    position: absolute;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#yesBtn {
+    background-color: #ff4081;
+    color: white;
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+#noBtn {
+    background-color: #ff1744;
+    color: white;
+    right: 30%;
+    transform: translateX(50%);
+}
+p{
+    font-size:13px;
+}
+.image_placeholder {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    width: 100%;
+    margin: 20px 0;
+    text-align: center; /* Ensures inline elements are centered */
+}
+
+.image_placeholder img {
+    max-width: 100%; /* Ensures image is responsive */
+    height: auto;
+    display: block; /* Removes any extra space below image */
+    margin: auto; /* Ensures centering inside block containers */
+    border-radius: 10px;
+}
